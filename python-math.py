@@ -97,10 +97,98 @@
 
 # Foydalanuvchidan ikki son kiritshni so'rab, kiritilgan sonlarning yig'indisi, ayirmasi, ko'paytmasi va bo'linmasini chiqaruvchi dastur
 
-son1 = int(input('1-sonni kiriting: '))
-son2 = int(input('2-sonni kiriting: '))
+# son1 = int(input('1-sonni kiriting: '))
+# son2 = int(input('2-sonni kiriting: '))
 
-print(f'{son1} + {son2} = {son1+son2}')
-print(f'{son1} - {son2} = {son1-son2}')
-print(f'{son1} * {son2} = {son1*son2}')
-print(f'{son1} / {son2} = {son1/son2}')
+# print(f'{son1} + {son2} = {son1+son2}')
+# print(f'{son1} - {son2} = {son1-son2}')
+# print(f'{son1} * {son2} = {son1*son2}')
+# print(f'{son1} / {son2} = {son1/son2}')
+
+########### list (Ro'yxat)
+
+# ismlar degan ro'yxat yarating va kamida 3 ta yaqin do'stingizning ismini kiriting
+
+ismlar = ['abdulbosit', 'akramjon', 'abdushohid', 'abdurrohman']
+
+# Ro'yxatdagi har bir do'stingizga qisqa xabar yozib konsolga chiqaring: 
+
+# print(f"Salom {ismlar[0].title()} bugun ko'rishamizmi")
+# print(f"Salom {ismlar[1].title()} bugun ko'rishamizmi")
+# print(f"Salom {ismlar[2].title()} bugun ko'rishamizmi")
+# print(f"Salom {ismlar[0].title()} bugun ko'rishamizmi")
+
+# sonlar deb nomlangan ro'yxat yarating va ichiga turli sonlarni yuklang (musbat, manfiy, butun, o'nlik). 
+
+sonlar = [15, 1, -5, 2.2, 2.0, -3]
+
+# Yuqoridagi ro'yxatdagi sonlar ustida turli arifmetik amallar bajarib ko'ring. Ro'yxatdagi
+# ba'zi sonlarning qiymatini o'zgartiring, ba'zilarini esa almashtiring. 
+
+sonlar[0] = 18
+sonlar[1] = 20
+sonlar[2] = sonlar[3]
+# print(f'{sonlar[0]*5}')
+# print(f'{sonlar[1]+2}')
+# print(f'{sonlar[2]*5}')
+# print(f'{sonlar[3]*5}')
+
+# t_shaxslarva z_shaxslar degan 2 ta ro'yxat yarating va biriga o'zingiz eng ko'p hurmat qilgan
+#  tarixiy shaxslarning, ikkinchisiga esa zamonamizdagi tirik bo'lgan shaxslarning ismini kiriting. 
+
+t_shaxslar = ['abu bakr', 'umar ibn hattob', 'Ali', 'Abu Ubayda']
+z_shaxslar = ['Muhammad ali', 'Erdogan', 'Abror Muhtor ali'] 
+
+
+# Yuqoridagi ro'yxatlarning har biridan bittadan qiymatni sug'urib olib (.pop()), quyidagi ko'rinishda chiqaring:
+
+t_shaxs = t_shaxslar.pop(0)
+z_shaxs = z_shaxslar.pop(2)
+
+# print(f"Men tarixiy shaxslardan {t_shaxs} bilan zamonaviy shaxslardan {z_shaxs} bilan suhbat qilishni istardim")
+
+# friends nomli bo'sh ro'yxat tuzing va unga .append() yordamida 5-6 ta mehmonga chaqirmoqchi
+#  bo'lgan do'stlaringizni kiriting. 
+
+friends = []
+
+friends.append('Abdushohid')
+friends.append('Abdulbosit')
+friends.append('Akramjon')
+friends.append('Sobitxon')
+friends.append('Abdurrohman')
+print(friends)
+
+# Yuqoridagi ro'yxatdan mehmonga kela olmaydigan odamlarni .remove() metodi yordamida o'chrib tashlang.
+
+friends.remove('Abdurrohman') 
+friends.remove('Sobitxon') 
+print(friends)
+
+# Ro'yxatning oxiriga, boshiga va o'rtasiga yangi ismlar qo'shing.
+
+friends.insert(0, 'Mutalli')
+friends.append('Asatbek')
+print(friends)
+
+
+# Yangi mehmonlar deb nomlangan bo'sh ro'yxat yarating. .pop() va .append() metodlari yordamida
+#  mehmonga kelgan do'stlaringizning ismini friends ro'yxatidan sug'urib olib, mehmonlar ro'yxatiga qo'shing.
+
+Mehmonlar = []
+
+Mehmonlar.append(friends.pop(0))
+Mehmonlar.append(friends.pop(0))
+Mehmonlar.append(friends.pop(0))
+Mehmonlar.append(friends.pop(0))
+Mehmonlar.append(friends.pop(0))
+
+
+
+print(Mehmonlar)
+print(f'Mehmonga kelganlar {Mehmonlar}')
+
+
+
+
+
