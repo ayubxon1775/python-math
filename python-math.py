@@ -299,13 +299,20 @@ ismlar = ['ayubxon', 'abdulbosit', 'akramjon','abdushohid', 'abdurahmon']
 
 # for ism in ismlar:
     # print(f'{ism.title()} bugun dachaga boramizmi')
-# Yuoqirdagi tsikl tugaganidan so'ng, ekranga "Kod n marta takrorlandi" degan xabarni chiqaring (n o'rniga kod necha marta takrorlanganini yozing)
+
+# Yuoqirdagi tsikl tugaganidan so'ng, ekranga "Kod n marta takrorlandi" degan xabarni chiqaring (n o'rniga kod necha
+# marta takrorlanganini yozing)
+
 # print(f'kod {len(ismlar)} marta takrorlandi')
 
-# 10 dan 100 gacha bo'lgan toq sonlar ro'yxatini tuzing. Ro'yxatning xar bir elementining kubini yangi qatordan konsolga chiqaring.
+# 10 dan 100 gacha bo'lgan toq sonlar ro'yxatini tuzing. Ro'yxatning xar bir elementining kubini yangi qatordan
+#  konsolga chiqaring.
+
 # for n in range(11, 100,2):
     # print(f'{n} ning kubi {n**3} ga teng')
-# Foydalanuvchidan 5 ta eng sevimli kinolarini kiritshni so'rang, va kinolar degan ro'yxatga saqlab oling. Natijani konsolga chiqaring.
+
+# Foydalanuvchidan 5 ta eng sevimli kinolarini kiritshni so'rang, va kinolar degan ro'yxatga saqlab oling.
+# Natijani konsolga chiqaring.
 
 # kinolar = []
 # for n in range(5):
@@ -316,14 +323,70 @@ ismlar = ['ayubxon', 'abdulbosit', 'akramjon','abdushohid', 'abdurahmon']
 # Foydalanuvchidan bugun nechta odam bilan uchrashganini (suhbatlashganini) so'rang, va har 
 # bir suhbatlashgan odamning ismini birma-bir so'rab ro'yxatga yozing. Ro'yxatni konsolga chiqaring.
 
-suhbat = int(input('bugun nechta odam bilan suhbatlashdingiz: '))
-suhbatdosh = []
-for n in range(suhbat):
-    suhbatdosh.append(input(f'{n+1}-suhbat qilgan odamingiz kim edi: '))
-print(suhbatdosh)
+# suhbat = int(input('bugun nechta odam bilan suhbatlashdingiz: '))
+# suhbatdosh = []
+# for n in range(suhbat):
+#     suhbatdosh.append(input(f'{n+1}-suhbat qilgan odamingiz kim edi: '))
+# print(suhbatdosh)
+
+########## if-else
+
+#Yangi cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia'] degan ro'yxat tuzing, ro'yxat elementlarining 
+# birinchi harfini katta qilib konsolga chqaring. GM uchun ikkala harfni katta qiling.
+
+cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
+
+# for car in cars:
+#     if car == 'gm':
+        # print(car.upper())
+    # else:
+        # print(car.title())
 
 
+# Yuqoridagi mashqni teng emas (!=) operatori yordamida bajaring. 
+
+# for car in cars:
+#     if car != 'gm':
+#         print(car.title())
+#     else:
+#         print(car.upper())
 
 
+# Foydalanuvchi login ismini so'rang. Agar login admin bo'lsa, "Xush kelibsiz, 
+# Admin. Foydalanuvchilar ro'yxatini ko'rasizmi?" xabarini konsolga chiqaring. 
+# Aks holda, "Xush kelibsiz, {foydalanuvchi_ismi}!"  matnini konsolga chiqaring.
+
+# login = input('login ismini kiriting: ')
+
+# if login.lower() == 'admin':
+#     print("Hush kelibsiz, Admin Foydalanuvchilar ro'yxatini ko'rasizmi?")
+# else:
+#     print(f"Xush kelibsiz, {login}!")
+
+# Foydalanuvchidan 2 ta son kiritishni so'rang. Agar ikki son bir-biriga teng bo'lsa, 
+# "Sonlar teng" ekan degan yozuvni konsolga chiqaring.
+
+# x = float(input('1-sonni kiriting '))
+# y = float(input('2-sonni kiriting '))
+# if x==y: print('sonlar teng')
 
 
+# Foydalanuvchidan istalgan son kiritishni so'rang. Agar son manfiy bo'lsa konsolga "Manfiy son", 
+# agar musbat bo'lsa "Musbat son" degan xabarni chiqaring. 
+
+# sonkirit = float(input('son kiriting: '))
+
+# if sonkirit < 0:
+#     print('manfiy')
+# else:
+#     print('musbat')
+
+# Foydalanuvchidan son kiritishni so'rang, agar son musbat bo'lsa uning ildizini 
+# hisoblab konsolga chiqaring. Agar son manfiy bo'lsa, "Musbat son kiriting" degan xabarni chiqaring. 
+
+# sonkirit = float(input('son kiriting: '))
+
+# if sonkirit > 0:
+#     print(f'{sonkirit ** (1/2)}')
+# else:
+#     print('musbat son kiriting')
