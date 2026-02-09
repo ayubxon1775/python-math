@@ -390,3 +390,110 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #     print(f'{sonkirit ** (1/2)}')
 # else:
 #     print('musbat son kiriting')
+
+
+########## bir nechta shartlarni tekshirish
+
+# Quyidagi dasturlarni alohida fayllarga yozing va bajaring:
+
+# Foydalanuvchidan juft son kiritishni so'rang. Agar foydalanuvchi juft son kiritsa
+#  "Rahmat!", agar toq son kiritsa "Bu son juft emas" degan xabarni chiqaring.
+
+# son_kirit = float(input('juft son kiriting: '))
+
+# if son_kirit % 2 == 0:
+#     print('Rahmat')
+# else:
+#     print('bu son juft emas')
+
+# Foydalanuvchi yoshini so'rang, va muzeyga kirish uchun chipta narhini quyidagicha chiqaring:
+
+
+# Agar foydalanuvchi 4 yoshdan kichkina yoki 60 dan katta bo'lsa bepul
+
+# Agar foydalanuvchi 18 dan kichik bo'lsa 10000 so'm
+
+# Agar foydalanuvchi 18 dan katta bo'lsa 20000 so'm
+
+# yosh = float(input('yoshingizni kiriting: '))
+
+# if yosh <= 4 or yosh >= 60:
+#     price = 0
+# elif yosh <= 18: 
+#     price = 10000
+# elif yosh > 18:
+#     price = 20000
+
+# print(f'sizga kirish narxi {price}')
+
+# Foydalanuvchidan ikita son kiritishni so'rang, sonlarni solishtiring va ularning teng yoki
+#  katta/kichikligi haqida xabarni chiqaring
+
+# x = float(input('1-sonni kiriting: '))
+# y = float(input('2-sonni kiriting: '))
+
+# if x == y:
+#     print(f'{x} == {y}')
+# elif x > y:
+#     print(f'{x} > {y}')
+# elif x < y:
+#     print(f'{x} < {y}')
+
+# mahsulotlar degan ro'yxat yarating va kamida 10 ta turli mahsulotni kiriting.
+# Yangi, savat degan bo'sh ro'yxat yarating va foydalanuvchidan
+# savatga kamida 5 ta mahsulot kiritishni so'rang. Savatdagi elementlarni, mahsulotlar
+# ro'yxati bilan solishtiring va qaysi biri ro'yxatda bo'lsa "Mahsulot do'konimizda bor" aks holda,
+# "Mahsulot do'konimizda yo'q" degan xabarlarni chiqaring.
+
+# mahsulotlar = ['anor', 'olma', 'behi', 'kartoshka', 'sabzi', 'tarvuz', 'piyoz', "go'sht", 'anjir', 'uzum']
+# savat = []
+# bor_mahsulotlar = []
+# mavjud_emas = []
+
+# for n in range(5):
+#     savat.append(input(f'{n+1}-mahsulotni kiriting '))
+
+# for mahsulot in savat:
+#     if mahsulot in mahsulotlar:
+#         bor_mahsulotlar.append(mahsulot)
+#     else:
+#         mavjud_emas.append(mahsulot)
+
+# if mavjud_emas:
+#     print('dokonimizda quyidagi mahsulotlar yoq:')
+#     for mahsulot in mavjud_emas:
+#         print(mahsulot)
+# else:
+#     print('siz soragan barcha mahsulotlar dokonimizda bor')
+
+# Yuqoridagi dasturni quyidagicha o'zgartiring: foydalanuvchidan 5 ta mahsulot kiritishni so'rang.
+#  Foydalanuvchi so'ragan va do'konda bor mahsulotlarni yang, bor_mahsulotlar degan ro'yxatga,
+#  do'konda yo'q mahsulotlarni esa mavjud_emas degan ro'yxatga qo'shing. 
+#  Agar mavjud_emas ro'yxati bo'sh bo'lsa, "Siz so'ragan barcha mahsulotlar do'konimizda bor"
+#  degan xabarni, aks holda esa "Quyidagi mahsulotlar do'konimizda yo'q: ....." degan xabarni chiqaring.
+
+
+
+# foydalanuvchilar degan ro'yxat tuzing, va kamida 5 ta login qo'shing.
+#  Foydalanuvchidan yangi login tanlashni so'rang va foydalanuvchi kiritgan loginni
+#  foydalanuvchilar degan ro'yxatning tarkibi bilan solishtiring. Agar ro'yxatda 
+# bunday login mavjud bo'lsa, "Login band, yangi login tanlang!" aks holda "Xush kelibsiz, 
+# foydalanuvchi!" xabarini chiqaring.
+
+# foydalanuvchilar = ['anvar', 'komil', 'ahror', 'bekzod', 'usmon']
+# yangi_login = input("Yangi login kiriting ")
+
+# if yangi_login in foydalanuvchilar:
+#     print(f"{yangi_login} login band, yangi login tanlang")
+# else:
+#     print('hush kelibsiz foydalanuvchi')
+
+# Foydalanuvchidan biror butun son kiritishni so'rang.
+# Foydalanuvchi kiritgan sonni 2 da 10 gacha bo'lgan sonlardan qay biriga 
+# qoldiqsiz bo'linishini konsolga chiqaring. 
+
+# son_kirit = float(input('istalgan sonni kiriting '))
+
+# for n in range(2,10):
+#     if son_kirit % n == 0:
+#         print(f'{son_kirit} soni {n} ga qoldiqsiz bolinadi')
