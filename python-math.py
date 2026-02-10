@@ -497,3 +497,92 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 # for n in range(2,10):
 #     if son_kirit % n == 0:
 #         print(f'{son_kirit} soni {n} ga qoldiqsiz bolinadi')
+
+
+######## lugat bilan ishlash
+
+# otam (onam, akam, ukam, va hokazo) degan lug'at yarating va lug'atga shu 
+# inson haqida kamida 3 ta m'alumot kiriting (ismi, tu'gilgan yili, shahri, manzili va hokazo).
+# Lug'atdagi ma'lumotni matn shaklida konsolga chiqaring :Otamning ismi Mavlutdin, 1954-yilda,
+# Samarqand viloyatida tug'ilgan
+
+
+# otam = {
+#     "ismi": 'Yunusxon',
+#     "t_yil": 1979,
+#     "t_shahar": 'Namangan',
+#     'y_manzil': 'Sharshara MFY'
+# }
+
+# onam = {
+#     "ismi": 'Muazzam',
+#     "t_yil": 1981,
+#     "t_shahar": 'Namangan',
+#     'y_manzil': 'Sharshara MFY'
+# }
+
+# ukam = {
+#     "ismi": 'Yaxyoxon',
+#     "t_yil": 2003,
+#     "t_shahar": 'Namangan',
+#     'y_manzil': 'Barkamol avlod MFY'
+# }
+
+# singlim = {
+#     "ismi": 'Zohida',
+#     "t_yil": 2012,
+#     "t_shahar": 'Namangan',
+#     'y_manzil': 'Sharshara MFY'
+# }
+
+# print(f"Otamning ismi {otam['ismi']} {otam['t_yil']}-yilda {otam['t_shahar']} shahrida tug'ilgan. ")
+# print(f"Onamning ismi {onam['ismi']} {onam['t_yil']}-yilda {onam['t_shahar']} shahrida tug'ilgan. ")
+# print(f"Ukamning ismi {ukam['ismi']} {ukam['t_yil']}-yilda {ukam['t_shahar']} shahrida tug'ilgan. ")
+# print(f"Singlimning ismi {singlim['ismi']} {singlim['t_yil']}-yilda {singlim['t_shahar']} shahrida tug'ilgan. ")
+
+# Oila a'zolaringizning sevimli taomlari lug'atini tuzing. Lug'atda kamida 5 ta ism-taom jufltigi bo'lsin.
+#  Kamida uch kishining sevimli taomini konsolga chiqaring: Alining sevimli taomi osh
+
+# taomlar = {
+# 'Otam': 'Manti',
+# 'Onam': 'Shashlik',
+# 'Ukam': 'Somsa',
+# 'Singlim1': 'kartoshka',
+# 'Simglim2': 'Bilish'
+# }
+# print(f"Otamning sevimli taomi {taomlar['Otam']}")
+# print(f"Onamning sevimli taomi {taomlar['Onam']}")
+# print(f"Ukamning sevimli taomi {taomlar['Ukam']}")
+
+# Python izohli lu'gati tuzing: Lug'atga shu kunga qadar o'rgangan 10 ta so'z (atamani) kiriting
+# (masalan integer, float, string, if, else va hokazo) va har birining qisqacha tarjimasini yozing
+
+# lugat = {
+#     'integer': 'butun son',
+#     'float': 'onlik son',
+#     'string': 'matn',
+#     'if': 'agar shart',
+#     'else': 'agar shart',
+#     'function': 'funksiya',
+#      'or': 'yoki taqqoslash operatori',
+#      'and': 'va taqqoslash operatori',
+#      'print': 'malumotni ekranga chiqaruvchi funksiya',
+#      'boolean': 'togri yoki notogri ekanini korsatuvchi operator'
+# }
+
+# Foydalanuvchidan biror so'z kiritishni so'rang va so'zning tarjimasini yuqoridagi lug'atdan 
+# chiqarib bering. Agar so'z lu'gatda mavjud bo'lmasa, "Bunda so'z mavjud emas" degan xabarni chiqaring.
+
+# soz_kirit = input('kalit soz kiriting: ').lower()
+# print(lugat.get(soz_kirit, 'bunday soz mavjud emas'))
+
+
+
+# Yuqoridagi vazifani if-else yordamida qiling va natijani ham foydalanuvchiga tushunarli 
+# ko'rinishda chiqaring.
+
+# tarjima = lugat.get(soz_kirit)
+# if tarjima == None:
+#     print('bunday soz mavjud emas')
+# else:
+#     print(f'{soz_kirit} sozi {lugat[soz_kirit]} deb tarjima qilinadi')
