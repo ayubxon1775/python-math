@@ -586,3 +586,81 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #     print('bunday soz mavjud emas')
 # else:
 #     print(f'{soz_kirit} sozi {lugat[soz_kirit]} deb tarjima qilinadi')
+
+
+############ lugat elementlar bilan ishlash
+
+
+# Python izohli lug'atini yarating va lug'atga kamida 10 ta so'z qo'shing.
+#  Lug'atdagi har bir kalit va qiymatni for tsikli yordamida, alifbo ketma-ketligida
+#  chiroyli qilib konsolga chiqaring. 
+
+# lugatlar = {
+#     'integer': 'butun son',
+#     'float': 'onlik son',
+#     'string': 'matn',
+#     'if': 'agar shart',
+#     'else': 'agar shart',
+#     'function': 'funksiya',
+#      'or': 'yoki taqqoslash operatori',
+#      'and': 'va taqqoslash operatori',
+#      'print': 'malumotni ekranga chiqaruvchi funksiya',
+#      'boolean': 'togri yoki notogri ekanini korsatuvchi operator'
+# }
+
+# for lugat in sorted(lugatlar):
+#     print(f'{lugat}-{lugatlar[lugat]}')
+
+
+# Davlatlar va ularning poytaxtlari lug'atini tuzing. Avval lug'atdagi davlatlarni,
+#  keyin poytaxtlarni alohida-alohida, alifbo ketma-ketligida konsolga chiqaring. 
+
+# davlatlar = {
+#     "O'zbekiston": 'Toshkent',
+#     "AQSH": 'Washington',
+#     "Rossiya": 'Moskva',
+#     'Angliya': 'London',
+#     'Fransiya': 'Paris'
+# }
+# print('Dunyo davlatlari')
+# for davlat in sorted(davlatlar.keys()):
+#     print(f'{davlat}')
+
+# print('Davlatlarning poytaxti')
+# for davlat in sorted(davlatlar.values()):
+#     print(f'{davlat}')
+  
+
+# Foydalanuvchidan istalgan davlatni kiritishni so'rang va shu davlatning
+# poytaxtini konsolga chiqaring. Agar foydalanuvchi lug'atda yo'q davlatni kiritsa,
+# "Bizda bunday ma'lumot yo'q" degan xabarni chiqaring.
+
+# dav_kirit = input('Qaysi davlatni poytaxtini bilishni istaysiz: ').title()
+
+# capital = davlatlar.get(dav_kirit)
+# if capital == None:
+#     print('Kechirasiz, bizda bu haqida ma\'lumot yo\'q')  
+# else:
+#     print(f'{dav_kirit} ning poytaxti {capital} shahri')
+
+
+# taomlar = {
+#     'osh': 15000,
+#     'shashlik': 18000,
+#     'somsa': 10000,
+#     'qozonkabob': 20000,
+#     'bishteks': 20000,
+#     'lagmon': 22000,
+#     'norin': 28000
+# }
+# print('3 ta buyurtma bering: ')
+# buyurtmalar = []
+
+# for n in range(3):
+#     buyurtmalar.append(input(f'{n+1}-taomni kiriting: '))
+
+# for buyurtma in buyurtmalar:
+#     if buyurtma in taomlar:
+#         print(f'{buyurtma} {taomlar[buyurtma]} som')
+#     else:
+#         print(f'bizda {buyurtma} taomi yoq')
