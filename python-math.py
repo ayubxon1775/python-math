@@ -664,3 +664,131 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #         print(f'{buyurtma} {taomlar[buyurtma]} som')
 #     else:
 #         print(f'bizda {buyurtma} taomi yoq')
+
+
+############## Nesting
+
+
+# Adabiyot (ilm-fan, san'at, internet) olamidagi 4 ta mashxur shaxlar haqidagi ma'lumotlarni
+# lug'at ko'rinishida saqlang. Lug'atlarni bitta ro'yxatga joylang, va har bir shaxs haqidagi
+# ma'lumotni konsolga chiqaring.
+
+# buxoriy = {
+#     'ism': 'abu abdulloh muhammad ibn ismoil',
+#     't_yil': 810,
+#     't_shahar': 'Buxoro',
+#     'yosh': 60,
+#     'asarlar': ['al-jome as-sahih', 'al-adab al-mufrad', 'at-tarix as-sagir']
+# }
+# qodiriy = {
+#     'ism': 'Abdulla Qodiriy',
+#     't_yil': 1894,
+#     't_shahar': 'Toshkent',
+#     'yosh': 44,
+#     'asarlar': ['Otkan kunlar', 'mehrobdan chayon', 'obid ketmon']
+# }
+# vohidov = {
+#     'ism': 'Erkin Vohidov',
+#     't_yil': 1936,
+#     't_shahar': 'Fargona',
+#     'yosh': 80,
+#     'asarlar': ['Tong nafasi', 'Qoshiqlarim sizga', 'ozbegim', 'qiziquvchan matmusa']
+# }
+# navoiy = {
+#     'ism': 'Alisher Navoiy',
+#     't_yil': 1441,
+#     't_shahar': 'Xirot',
+#     'yosh': 60,
+#     'asarlar': ['Xamsa', 'lison ut-tayr', 'mahbub al-qulub', 'munojot']
+# }
+
+# adabiyotchilar = [buxoriy, qodiriy, vohidov, navoiy]
+
+# for adabiyot in adabiyotchilar:
+#     print(f'{adabiyot['ism']} {adabiyot['t_yil']}-yilda '
+#           f'{adabiyot['t_shahar']}da tavallud topgan. {adabiyot['yosh']} yil umr korgan')
+
+
+# Yuqoridagi lug'atlarga har bir shaxsning mashxur asarlari ro'yxatini ham qo'shing.
+# For tsikli yordamida muallifning ismi va uning asarlarini konsolga chiqaring.
+
+# for adabiyot in adabiyotchilar:
+#     ism = adabiyot['ism']
+#     asarlar = adabiyot['asarlar']
+#     print(f'{ism} ning mashxur asarlar: ')
+#     for asar in asarlar:
+#         print(asar)
+
+# Oila a'zolaringiz (do'stlaringiz) dan 3 ta sevimli kino-seriali haqida so'rang. 
+# Do'stingiz ismi kalit, uning sevimli kinolarini esa ro'yxat ko'rinishida lug'artga saqlang. 
+# Natijani konsolga chiqaring.
+
+# dostlar = {
+#     'ali': ['Terminator', 'Rambo', 'Titanic'],
+#     'vali': ['Tenet', 'Inception', 'Interstellar'],
+#     'hasan': ['Abdullajon', 'Bomba', 'Shaytanat'],
+#     'husan': ['Mahallada duv duv gap', 'john wick',]
+# }
+
+# for kalit, qiymat in dostlar.items():
+#     print(f'{kalit.title()} ning sevimli kinolari:')
+#     for q in qiymat:
+#         print(q)
+
+
+# Davlatlar degan lug'at yarating, lug'at ichida bir nechta davlatlar haqida ma'lumotlarni 
+# lug'at ko'rinishida saqlang. Har bir davlat haqida ma'lumotni konsolga chiqaring.
+
+# davlatlar = {
+#     "o'zbekiston":{
+#         'poytaxt': 'Toshkent',
+#         'hududi': 448978,
+#         'aholi': 33_000_000,
+#         'pul birligi': 'som'
+#     },
+#     "rossiya":{
+#         'poytaxt': 'Moskva',
+#         'hududi': 17098246,
+#         'aholi': 144_000_00,
+#         'pul birligi': 'rubl'
+#     },
+#     "aqsh":{
+#         'poytaxt': 'Washington',
+#         'hududi': 9631418,
+#         'aholi': 327_000_000,
+#         'pul birligi': 'dollor'
+#     },
+#     "malayziya":{
+#         'poytaxt': 'Kuala-Lampur',
+#         'hududi': 329750,
+#         'aholi': 25_000_000,
+#         'pul birligi': 'rinngit'
+#     }
+# }
+
+# for davlat, info in davlatlar.items():
+#     if davlat.lower() == 'aqsh':
+#         davlat = davlat.upper()
+#     else:
+#         davlat = davlat.capitalize()
+#     print(f'\n {davlat} ning poytaxti {info['poytaxt'].title()}'
+#           f'\n Hududi: {info['hududi']} kv.km'
+#           f'\n Aholisi: {info['aholi']}'
+#           f'\n Pul birligi {info['pul birligi']}'
+#           )
+
+
+# Yuqoridagi dasturga o'zgartirish kiriting: konsolga barcha davlatlarni emas,
+# foydalanuvchi so'ragan davlat haqida ma'lumot bering. 
+# Agar davlat sizning lug'atingizda mavjud bo'lmasa, 
+# "Bizda bu davlat haqida ma'lumot yo'q" degan xabarni chiqaring.
+
+# davlat = input('Davlat nomini kiriting: ').lower()
+# if davlat in davlatlar:
+#     info = davlatlar[davlat]
+#     print(f"\n{davlat.capitalize()}ning poytaxti {info['poytaxt'].title()}"
+#           f"\nHududi: {info['hududi']} kv.km"
+#           f"\nAholisi: {info['aholi']}"
+#           f"\nPul birligi: {info['pul birligi']}")
+# else:
+#     print("Bizda bu davlat haqida ma'lumot mavjud emas")
