@@ -851,3 +851,124 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #     else:
 #         ildiz = float(qiymat)**(0.5)
 #         print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+
+
+########## while royxatlar va lugatlar
+
+# ismlar = []
+
+# print('Yaqin dostlaringizni royxatini tuzamiz ')
+
+# n = 1
+# while True:
+#     savol = f'{n}-dostingizni ismini kiriting '
+#     ism = input(savol)
+#     ismlar.append(ism)
+#     javob = input('Yana ism qoshasizmi (ha/yoq) ')
+#     if javob == 'ha':
+#         n+=1
+#         continue
+#     else:
+#         break
+
+# print('dostlarni royxati ')
+# for ism in ismlar:
+#     print(ism.title())
+
+# print('dostlaringizni yoshini saqlaymiz ')
+# dostlar = {}
+# ishora = True
+# while ishora:
+#     ism = input('Dostingizni ismini kiriting ')
+#     yosh = input(f'{ism.title()}ning yoshini kiriting ')
+#     dostlar[ism] = int(yosh)
+
+#     javob = input('Yana malumot qoshasizmi (ha/yoq) ')
+#     if javob == "yo'q":
+#         ishora = False
+
+# for ism, yosh in dostlar.items():
+#     print(f'{ism.title()} {yosh} yoshda')
+
+
+# cars = ['lacetti','nexia','toyota','nexia','audi','malibu','nexia']
+
+# while 'nexia' in cars:
+#     cars.remove('nexia')
+# print(cars)
+
+# talabalar = ['hasan', 'husan', 'olim', 'botir']
+
+# baholangan_talabalar = {}
+# while talabalar:
+#     talaba = talabalar.pop()
+#     baho = input(f"{talaba.title()} ning bahosini kiriting: ")
+#     print(f'{talaba.title()} baholandi ')
+#     baholangan_talabalar[talaba] = baho
+
+# for talaba, baho in baholangan_talabalar.items():
+#     print(f'{talaba.title()}ning bahosi {baho}')
+
+
+
+# Foydalanuvchidan buyurtma qabul qiluvchi dastur yozing.
+# Mahsulotlar nomini birma-bir qabul qilib, yangi ro'yxatga joylang.
+
+# print('Mahsulotlarni kiriting: ')
+# mahsulotlar = []
+# n = 1
+# while True:
+#     savol = f'{n}-mahsulotni kiriting '
+#     mahsulot = input(savol)
+#     mahsulotlar.append(mahsulot)
+#     javob = input('Yana maxsulot qoshasizmi (ha/yoq) ')
+#     if javob == 'ha':
+#         n+=1
+#         continue
+#     else:
+#         break
+# print('mahsulotlar royxati')
+# for mahsulot in mahsulotlar:
+#     print(mahsulot.title())
+
+# e-bozor uchun mahsulotlar va ularning narhlari lug'atini shakllantiruvchi dastur yozing. 
+# Foydalanuvchidan lug'atga bir nechta elementlar (mahsulot va uning narhi) kiritishni so'rang.
+
+# print('E-bozor uchun mahsulot royxatlari va narxlari')
+
+# mahsulotlar = {}
+# ishora = True
+# while ishora:
+#     mahsulot = input('mahsulotni nomini kiriting: ')
+#     narh = input(f'{mahsulot.title()}ning narxini kiriting ')
+#     mahsulotlar[mahsulot] = int(narh)
+
+#     javob = input('Yana mahsulot qoshasizmi (ha/yoq)')
+#     if javob == "yo'q":
+#         ishora = False
+# print('Mahsulotlar va ularning narxi')
+# for mahsulot, narh in mahsulotlar.items():
+#     print(f'{mahsulot.title()} {narh} som')
+    
+
+# Yuqoridagi ikki dasturni jamlaymiz. 
+# Foydalanuvchi buyurtmasi ro'yxatidagi har bir mahsulotni e-bozordagi mahsulotlar bilan solishitiring 
+# (tayyor ro'yxat ishlatishingiz mumkin). 
+# Agar mahsuot e-bozorda mavjud bo'lsa mahuslot narhini chiqaring, aks holda 
+# "Bizda bu mahsulot yo'q" degan xabarni kor'sating.
+
+
+# buyurtmalar = ['olma', 'shaftoli', 'sabzi', 'kartoshka', 'tarvuz', 'bodring', 'pomidor', 'behi']
+# mahsulotlar = {'olma':20000,
+#                'shaftoli':25000,
+#                'tarvuz':18000,
+#                'uzum':22000}
+
+# while buyurtmalar:
+#     buyurtma = buyurtmalar.pop()
+#     if buyurtma in mahsulotlar.keys():
+#         narh = mahsulotlar[buyurtma]
+#         print(f'{buyurtma.title()} - {narh} som')
+#     else:
+#         print(f'Bizda {buyurtma} yoq')
