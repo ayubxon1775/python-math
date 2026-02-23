@@ -972,3 +972,76 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #         print(f'{buyurtma.title()} - {narh} som')
 #     else:
 #         print(f'Bizda {buyurtma} yoq')
+
+
+###################
+
+# funksiya
+
+# Foydalanuvchi ismi va yoshini so'rab, uning tug'ilgan yilini hisoblaydigan funksiya yozing.
+# def toliq_ism(ism, yosh,joriy_yil = 2026):
+#     """Foydalanuvchi ism va tugilgan yilini chiqaruvchi funksiya"""
+#     print(f"Foydalanuvchi ismi: {ism.title()}\n"
+#           f"Foydalanuvchi tugilgan yili: {joriy_yil-yosh}"
+#           )
+    
+# toliq_ism('olim', 28)
+
+
+# Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi funksiya yozing
+
+# def kvadrat_kub(son):
+#     """Sonning kvadrati va kubini chiqaruvchi funksiya"""
+#     print(f'{son} sonini kvadrati {son**2}\n'
+#           f'{son} sonini kubi {son**3}'
+#           )
+# kvadrat_kub(5)
+
+
+# Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi funksiya yozing.
+
+# def juft_toq(son):
+#     """Sonni juft yoki toq ekanini aniqlovchi funksiya"""
+#     if son % 2 == 0:
+#         print(f'{son} juft son')
+#     else:
+#         print(f'{son} toq son')
+    
+# juft_toq(19)
+
+
+# Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi funksiya yozing.
+# Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
+
+# def taqqoslash(son1, son2):
+#     if son1 > son2:
+#         print(son1)
+#     elif son1 < son2:
+#         print(son2)
+#     else:
+#         print('Sonlar teng')
+
+# taqqoslash(15,15)
+
+# Foydalanuvchidan x va y sonlarini olib, ni konsolga chiqaruvchi funksiya yozing.
+
+# def daraja(x, y):
+#     """Darajani chiqarib beruvchi dastur"""
+#     print(f'{x} ning darajasi {x**y}')
+
+# daraja(2,3)
+
+# Yuqoridagi funksiyada y uchun 2 standart qiymatini bering.
+
+# def daraja(x, y=2):
+#     """Darajani chiqarib beruvchi dastur"""
+#     print(f'{x} ning darajasi {x**y}')
+
+# daraja(2)
+
+# def son_ol(son):
+#     for n in range(1,10):
+#         if son % n == 0:
+#             print(f'{son} {n} ga qoldiqsiz bolinadi')
+        
+# son_ol(70)
