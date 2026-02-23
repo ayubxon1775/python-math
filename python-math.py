@@ -1045,3 +1045,158 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 #             print(f'{son} {n} ga qoldiqsiz bolinadi')
         
 # son_ol(70)
+
+##################
+
+# qiymat qaytaruvchi funksiya
+
+# def toliq_ism_yasa(ism, familiya, otasining_ismi = ''):
+#     """Toliq ism qaytaruvchi funksiya"""
+#     if otasining_ismi:
+#         toliq_ism = f'{ism} {familiya} {otasining_ismi}'
+#     else:
+#         toliq_ism = f'{ism} {familiya}'
+#     return toliq_ism.title()
+
+# talaba1 = toliq_ism_yasa('ayubxon', 'axmatxonov', 'yunusxon ogli')
+# talaba2 = toliq_ism_yasa('olim', 'hakimov')
+
+# print(f'darsga kelmagan talabalar: {talaba1}, {talaba2}')
+
+
+# def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#     avto = {
+#         'kompaniya': kompaniya,
+#         'model': model,
+#         'rang': rangi,
+#         'korobka': korobka,
+#         'yil': yili,
+#         'narh': narhi
+#     }
+#     return avto
+
+# avto1 = avto_info('GM','Malibu','Qora','Avtomat',2018)
+# avto2 = avto_info('GM','Gentra','Oq','Mexanika',2016,15000)
+
+# avtolar = [avto1, avto2]
+# print('Onlayn bozordagi mavjud mashinalar:')
+# for avto in avtolar:
+#     if avto['narh']:
+#         narh = avto['narh']
+#     else:
+#         narh = 'Nomalum'
+#     print(f'{avto['rang']} {avto['model']}. Narhi : {narh}')
+
+
+# def oraliq(min, max, qadam=1):
+#     sonlar = []
+#     while min<max:
+#         sonlar.append(min)
+#         min+=qadam
+#     return sonlar
+
+# print(oraliq(0,10,2))
+# print(oraliq(10,21))
+
+
+# def avto_info(kompaniya, model, rangi, korobka, yili, narhi=None):
+#     avto = {
+#         'kompaniya': kompaniya,
+#         'model': model,
+#         'rang': rangi,
+#         'korobka': korobka,
+#         'yil': yili,
+#         'narh': narhi
+#     }
+#     return avto
+
+# print('saytimizdagi avtolar royxatini shakllantiring ')
+# avtolar = []
+
+# while True:
+#     print("\nQuyidagi ma'lumotlarni kiriting ",end='')
+#     kompaniya=input("Ishlab chiqaruvchi: ")
+#     model=input("Modeli: ")
+#     rangi=input("Rangi: ")
+#     korobka=input("Korobka: ")
+#     yili=input("Ishlab chiqarilgan yili: ")
+#     narhi=input("Narhi: ")
+
+#     avtolar.append(avto_info(kompaniya, model, rangi, korobka, yili, narhi))
+
+#     javob = input('Yana avto qoshasizmi (ha/yoq)')
+#     if javob == 'no':
+#         break
+# print('Salonimizdagi avtolar')
+# for avto in avtolar:
+#     print(f'{avto['rang']} {avto['model']}, {avto['korobka']}. Narhi: {avto['narh']}')
+
+
+
+# Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi,
+# email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida qaytaruvchi
+# funksiya yozing. Lug'atda foydalanuvchu yoshi ham bo'lsin. 
+# Ba'zi argumentlarni kiritishni ixtiyoriy qiling (masalan, tel.raqam, el.manzil)
+
+# Yuqoridagi funksiyani while yordamida bir necha bor chaqiring, va mijozlar
+# degan ro'yxatni shakllantiring. Ro'yxatdagi mijozlar haqidagi ma'lumotni konsolga chiqaring.
+
+# def user_info(ism, familiya, t_yil, t_joy, email_mazil, t_raqam='None'):
+#     user = {
+#         'ism': ism,
+#         'familiya': familiya,
+#         't_yil': t_yil,
+#         't_joy':t_joy,
+#         'email_manzil': email_mazil,
+#         't_raqam': t_raqam, 
+#         'yosh': 2026-t_yil 
+#     }
+#     return user
+
+# print('Talabalar royxatini shakllantiring ')
+# talabalar = []
+# while True:
+#     print('Quyidagi malumotlarni kiriting: ', end='')
+#     ism = input('ismini kiriting ').title()
+#     familiya = input('familiya kiriting ').title()
+#     t_yil = int(input('tugilgan yilini kiriting '))
+#     t_joy = input('tugilgan joyini kiriting ').title()
+#     email_mazil = input('email manzilini kiriting ').title()
+#     t_raqam = input('telefon raqamini kiriting ')
+
+#     talabalar.append(user_info(ism, familiya, t_yil, t_joy, email_mazil, t_raqam))    
+
+#     javob = input('Yana malumot kiritasizmi(ha/yoq) ')
+#     if javob == 'yoq':
+#         break
+# print('Talabalar royxati ')
+# for talaba in talabalar:
+#     print(f'{talaba['ism']} {talaba['familiya']}. {talaba['yosh']} yoshda')
+
+
+# Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+
+# def son_ol(son1, son2, son3):
+#     max = son1
+#     if son2 >= max:
+#         max = son2
+#     if son3 >= max:
+#         max = son3
+#     return max
+
+# sonlar = son_ol(5,18,9)
+# print(sonlar)
+
+
+
+def fibonachchi(n):
+    sonlar = []
+    for x in range(n):
+        if x == 0 or x == 1:
+            sonlar.append(1) 
+        else:
+            sonlar.append(sonlar[x-1] + sonlar[x-2])
+    return sonlar
+    
+
+print(fibonachchi(10))
