@@ -1188,15 +1188,79 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 # print(sonlar)
 
 
+# Foydalanuvchidan son qabul qilib, 
+# shu son miqdoricha Fibonachchi ketma-ketligidagi sonlar ro'yxatni qaytaruvchi funksiya yozing.  
+# Ta’rif: Har bir hadi o’zidan oldingi ikkita hadning yig’indisiga teng bo’lgan ketma-ketlik 
+# Fibonachchi ketma-ketligi deyiladi. Bunda boshlang’ish had ko’pincha 1 deb olinadi. 
 
-def fibonachchi(n):
-    sonlar = []
-    for x in range(n):
-        if x == 0 or x == 1:
-            sonlar.append(1) 
-        else:
-            sonlar.append(sonlar[x-1] + sonlar[x-2])
-    return sonlar
+# def fibonachchi(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x == 0 or x == 1:
+#             sonlar.append(1) 
+#         else:
+#             sonlar.append(sonlar[x-1] + sonlar[x-2])
+#     return sonlar
     
+# print(fibonachchi(10))
 
-print(fibonachchi(10))
+##############
+
+# funksiya va royxatlar
+
+# def bahola(ismlar):
+#     baholar = {}
+#     while ismlar:
+#         ism = ismlar.pop()
+#         baho = input(f'Talaba {ism.title()}ning bahosi ')
+#         baholar[ism] = baho
+#     return baholar
+
+# talabalar = ['ali', 'vali', 'ahmad', 'usmon']
+# baholar = bahola(talabalar[:])
+# print(talabalar)
+
+
+# Matnlardan iborat ro'yxat qabul qilib, 
+# ro'yxatdagi har bir matnning birinchi harfini katta harfga o'zgatiruvchi funksiya yozing. 
+
+
+# def katta_harf(ismlar):
+#     for i in range(len(ismlar)):
+#         ismlar[i] = ismlar[i].title()
+#     return ismlar
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# katta_harf(ismlar)
+# print(ismlar)
+
+
+# Yuoqirdagi funksiyani asl ro'yxatni o'zgartirmaydigan va yangi ro'yxat qaytaradigan qilib o'zgartiring
+
+# def katta_harf(ismlar):
+#     for i in range(len(ismlar)):
+#         ismlar[i] = ismlar[i].title()
+#     return ismlar
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# yangi_ismlar = katta_harf(ismlar[:])
+# print(ismlar)
+# print(yangi_ismlar)
+
+
+
+# Darsimiz davomida yozgan bahola funksiyasini .pop() metodidan foydalanmasdan va 
+# asl ro'yxatga o'zgartirish kiritmasdan faqat lug'at qaytaradigan qilib yozing.
+
+
+# talabalar = ['ali', 'vali', 'hasan', 'husan']
+# def bahola(ismlar):
+#     baholar = {}
+#     for ism in ismlar:
+#         baho = input(f'Talaba {ism.title()}ning bahosi ')
+#         baholar[ism] = baho
+#     return baholar
+
+# baholar = bahola(talabalar)
+# print(baholar)
+# print(talabalar)
