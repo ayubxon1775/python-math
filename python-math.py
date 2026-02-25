@@ -1264,3 +1264,67 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 # baholar = bahola(talabalar)
 # print(baholar)
 # print(talabalar)
+
+
+##############
+# moslashuvchan funksiya (*args, *kwargs)
+
+# def summa(*sonlar):
+#     """Kiritilgan sonlarni yigindisini hisoblovchi funksiya"""
+#     yigindi = 0
+#     for son in sonlar:
+#         yigindi += son
+#     return yigindi
+
+# print(summa(1,2,3,4,5,6,7,8,9,10))
+# print(summa(10,10,55,55))
+
+
+# def summa(*sonlar):
+#     """Kiritilgan sonlarni yigindisini hisoblovchi funksiya"""
+#     return sum(sonlar)
+
+# print(summa(1,2,3,4,5,6,7,8,9,10))
+
+# def summa(x,y, *sonlar):
+#     """Kiritilgan sonlarni yigindisini hisoblovchi funksiya"""
+#     return x+y+sum(sonlar)
+
+# print(summa(1,2))
+
+
+# def avto_info(kompaniya, model, **malumotlar):
+#     """Avto haqidagi malumotlarni lugat korinishida qaytaruvchi funksiya"""
+#     malumotlar['kompaniya'] = kompaniya
+#     malumotlar['model'] = model
+#     return malumotlar
+
+# avto1 = avto_info('Gm', 'Malibu', rang='qora', yil=2018)
+# avto2 = avto_info('Kia', 'K5', rang='qizil', narh=35000)
+# print(avto2)
+
+
+# Istalgancha sonlarni qabul qilib, ularning ko'paytmasini qaytaruvchi funksiya yozing
+
+# def kopaytma(*sonlar):
+#     kopaytmaa = 1
+#     for son in sonlar:
+#         kopaytmaa *= son
+#     return kopaytmaa
+# print(kopaytma(5,5,5))
+
+
+# Talabalar haqidagi ma'lumotlarini lug'at ko'rinishida qaytaruvchi funkisya yozing. 
+# Talabaning ismi va familiyasi majburiy argument, qolgan ma'lumotlar esa ixtiyoriy ko'rinishda 
+# istalgancha berilishi mumkin bo'lsin.
+
+# def talaba_info(ism, familiya, **malumotlar):
+#     malumotlar['ism'] = ism
+#     malumotlar['familiya'] = ism
+#     return malumotlar
+
+# talaba1 = talaba_info('Ayubxon', 'Axmatxonov', t_yil = 2000, t_mazil = 'Namangan', bosqich = 1)
+# talaba2 = talaba_info('Sobitxon', 'Axmatxonov', t_yil = 2000, t_mazil = 'Namangan', bosqich = 2)
+
+# print(talaba1)
+# print(talaba2)
