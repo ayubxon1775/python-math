@@ -1423,3 +1423,60 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 # print(list(map(lambda matn: matn.upper(), ismlar)))
 
 
+import random
+
+def son_top(x=10):
+    tasodifiy_son = random.randint(1, x)
+    print(f"Men 1 dan {x} gacha son o'yladim.Topa olasizmi ")
+    tahminlar = 0
+    while True:
+        tahminlar += 1
+        tahmin = int(input(" >>> "))
+        if tahmin < tasodifiy_son:
+            print("Men oylagan son bundan kattaroq. Yana harakat qilib koring")
+        elif tahmin > tasodifiy_son:
+            print("Men oylagan son bundan kichikroq. Yana harakat qilib koring")
+        else:
+            break
+    print(f"tabriklamiz siz {tahminlar} ta tahmin bilan topdingiz")
+    return tahminlar
+
+
+def son_top_pc(x=10):
+    print(f"1 dan {x} gacha son o'ylang. men topishga harakat qilaman ")
+    input('son oylagan bolsangiz istalgan tugmani bosing ')
+    quyi = 1
+    yuqori = x
+    tahminlar = 0
+    while True:
+        tahminlar += 1
+        if quyi != yuqori:
+            tahmin = random.randint(quyi, yuqori)
+        else:
+            tahmin = quyi
+        javob = input(f"Siz {tahmin} sonini o'yladingiz: tog'ri (t),"
+                      f"men o'ylagan son bundan kattaroq (+), yoki kichikroq (-) ".lower())
+        if javob == '-':
+            yuqori = tahmin - 1
+        elif javob == '+':
+            quyi = tahmin + 1
+        else:
+            break
+    print(f'Men {tahminlar} ta tahmin bilan topdim ')
+    return tahminlar
+
+
+def play(x=10):
+    yana = True
+    while yana:
+        tahminlarUser = son_top(x)
+        tahminlarPc = son_top_pc(x)
+        if tahminlarUser < tahminlarPc:
+            print('Siz Yutdingiz')
+        elif tahminlarUser > tahminlarPc:
+            print('Men yutdim')
+        else:
+            print('Durrang')
+        yana = int(input("Yana oynashni istaysizmi Xa(1) yoq(0)"))
+
+play()
