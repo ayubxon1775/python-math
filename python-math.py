@@ -1422,61 +1422,114 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 # ismlar = ['hasan', 'husan', 'olim', 'umid']
 # print(list(map(lambda matn: matn.upper(), ismlar)))
 
+#################
 
-import random
+# son topish oyini
 
-def son_top(x=10):
-    tasodifiy_son = random.randint(1, x)
-    print(f"Men 1 dan {x} gacha son o'yladim.Topa olasizmi ")
-    tahminlar = 0
-    while True:
-        tahminlar += 1
-        tahmin = int(input(" >>> "))
-        if tahmin < tasodifiy_son:
-            print("Men oylagan son bundan kattaroq. Yana harakat qilib koring")
-        elif tahmin > tasodifiy_son:
-            print("Men oylagan son bundan kichikroq. Yana harakat qilib koring")
-        else:
-            break
-    print(f"tabriklamiz siz {tahminlar} ta tahmin bilan topdingiz")
-    return tahminlar
+# import random
 
-
-def son_top_pc(x=10):
-    print(f"1 dan {x} gacha son o'ylang. men topishga harakat qilaman ")
-    input('son oylagan bolsangiz istalgan tugmani bosing ')
-    quyi = 1
-    yuqori = x
-    tahminlar = 0
-    while True:
-        tahminlar += 1
-        if quyi != yuqori:
-            tahmin = random.randint(quyi, yuqori)
-        else:
-            tahmin = quyi
-        javob = input(f"Siz {tahmin} sonini o'yladingiz: tog'ri (t),"
-                      f"men o'ylagan son bundan kattaroq (+), yoki kichikroq (-) ".lower())
-        if javob == '-':
-            yuqori = tahmin - 1
-        elif javob == '+':
-            quyi = tahmin + 1
-        else:
-            break
-    print(f'Men {tahminlar} ta tahmin bilan topdim ')
-    return tahminlar
+# def son_top(x=10):
+#     tasodifiy_son = random.randint(1, x)
+#     print(f"Men 1 dan {x} gacha son o'yladim.Topa olasizmi ")
+#     tahminlar = 0
+#     while True:
+#         tahminlar += 1
+#         tahmin = int(input(" >>> "))
+#         if tahmin < tasodifiy_son:
+#             print("Men oylagan son bundan kattaroq. Yana harakat qilib koring")
+#         elif tahmin > tasodifiy_son:
+#             print("Men oylagan son bundan kichikroq. Yana harakat qilib koring")
+#         else:
+#             break
+#     print(f"tabriklamiz siz {tahminlar} ta tahmin bilan topdingiz")
+#     return tahminlar
 
 
-def play(x=10):
-    yana = True
-    while yana:
-        tahminlarUser = son_top(x)
-        tahminlarPc = son_top_pc(x)
-        if tahminlarUser < tahminlarPc:
-            print('Siz Yutdingiz')
-        elif tahminlarUser > tahminlarPc:
-            print('Men yutdim')
-        else:
-            print('Durrang')
-        yana = int(input("Yana oynashni istaysizmi Xa(1) yoq(0)"))
+# def son_top_pc(x=10):
+#     print(f"1 dan {x} gacha son o'ylang. men topishga harakat qilaman ")
+#     input('son oylagan bolsangiz istalgan tugmani bosing ')
+#     quyi = 1
+#     yuqori = x
+#     tahminlar = 0
+#     while True:
+#         tahminlar += 1
+#         if quyi != yuqori:
+#             tahmin = random.randint(quyi, yuqori)
+#         else:
+#             tahmin = quyi
+#         javob = input(f"Siz {tahmin} sonini o'yladingiz: tog'ri (t),"
+#                       f"men o'ylagan son bundan kattaroq (+), yoki kichikroq (-) ".lower())
+#         if javob == '-':
+#             yuqori = tahmin - 1
+#         elif javob == '+':
+#             quyi = tahmin + 1
+#         else:
+#             break
+#     print(f'Men {tahminlar} ta tahmin bilan topdim ')
+#     return tahminlar
 
-play()
+
+# def play(x=10):
+#     yana = True
+#     while yana:
+#         tahminlarUser = son_top(x)
+#         tahminlarPc = son_top_pc(x)
+#         if tahminlarUser < tahminlarPc:
+#             print('Siz Yutdingiz')
+#         elif tahminlarUser > tahminlarPc:
+#             print('Men yutdim')
+#         else:
+#             print('Durrang')
+#         yana = int(input("Yana oynashni istaysizmi Xa(1) yoq(0)"))
+
+# play()
+
+
+###########
+
+# Soz topish
+
+# import random
+# from uzwords import words
+
+# def get_word():
+#     word = random.choice(words)
+#     while "-" in word or " " in word:
+#         word = random.choice(words)
+#     return word.upper()
+
+# def display(user_letters, word):
+#     display_letter = ''
+#     for letter in word:
+#         if letter in user_letters.upper():
+#             display_letter += letter
+#         else:
+#             display_letter += '_'
+#     return display_letter
+
+# def play():
+#     word = get_word()
+#     word_letters = set(word)
+#     user_letters = ''
+#     print(f'Men {len(word)} xonali soz oyladim. Topa olasizmi ')
+
+#     while len(word_letters)>0:
+#         print(display(user_letters ,word))
+#         if len(user_letters)>0:
+#             print(f'shu vaqtgacha kiritgan xarflaringiz: {user_letters}')
+        
+#         letter = input('Xarf kiriting ').upper()
+#         if letter in user_letters:
+#             print('Bu harfni avval kiritgansiz . boshqa harf kiriting ')
+#             continue
+#         elif letter in word:
+#             word_letters.remove(letter)
+#             print(f'{letter} xarf togri ')
+#         else:
+#             print('bunday harf yoq')
+#         user_letters += letter
+#     print(f'Tabriklayman {word} sozini {len(user_letters)} ta urinish bilan topdingiz ')
+
+
+# play()
+
