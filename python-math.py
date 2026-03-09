@@ -1533,3 +1533,54 @@ cars = ['toyoto', 'mazda', 'hyundai', 'gm', 'kia']
 
 # play()
 
+###################
+
+# klasslar
+
+# class Talaba:
+#     """Talaba nomli klass yaratamiz"""
+#     def __init__(self, ism, familiya, tyil):
+#         """Talabaning hususiyatlar"""
+#         self.ism = ism
+#         self.familiya = familiya
+#         self.tyil = tyil
+#     def tanishtir(self):
+#         print(f'{self.ism} {self.familiya}. {self.tyil} yilda tugilgan')
+
+#     def get_name(self):
+#         print(f'Talabaning ismi: {self.ism}')
+
+#     def age(self, yil):
+#         return yil - self.tyil
+    
+#     def get_full_name(self):
+#         pass
+
+# talaba1 = Talaba('Alijon', 'Valiyev', 2000)
+# talaba2 = Talaba('Ayubxon', 'Axmatxonov', 2001)
+# talaba3 = Talaba('Sobitxon', 'Axmatxonov', 2000)
+# print(talaba1.familiya)
+# print(talaba2.ism)
+# print(talaba3.tyil)
+# talaba1.tanishtir()
+# talaba1.get_name()
+# talaba2.get_name()
+# print(talaba2.age(2026))
+
+# class User:
+#     """Foydalanuvchi malumotlarini kitirish"""
+#     def __init__(self, ism, foy_ism, familiya, email, phoneNumber):
+#         self.ism = ism
+#         self.foy_ism = foy_ism
+#         self.familiya = familiya
+#         self.email = email
+#         self.phoneNumber = phoneNumber
+#     def get_info(self):
+#         print(f'Foydalanuvchi: {self.foy_ism}, ismi: {self.ism}, familiyasi: {self.familiya}, ' 
+#               f'email:{self.email}, telefon raqami: {self.phoneNumber}')
+        
+# user1 = User('Ayubxon', 'Ayubxon5838', 'Axmatxonov', 'ayubxonaxmatxonov@gmail.com', '+998994411775')
+# user2 = User('Sobitxon', 'sobitxon5422', 'Axmatxonov', 'Sobitxon@gmail.com', '+998994045422')
+# user1.get_info()
+# print(user1.ism)
+# print(user2.ism)
